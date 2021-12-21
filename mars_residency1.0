@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mars Residency</title>
+<style>
+</style>
+</head>
+  
+<body>
+<h1 id="title">Mars Residency</h1>
+  <p id="description">Enter contact information for a quote</p>
+  <select id="dropdown">
+    <option value="title">Select Title</option>
+    <option value="Mr.">Mr.</option>
+    <option value="Mrs.">Mrs.</option>
+    <option value="Ms.">Ms.</option>
+    <option value="Dr.">Dr.</option>
+    <option value="N/A">Not Applicable</option>
+  </select>
+  <br> <br>
+  <form id="form" method="get">
+    <label>Age:</label>
+    <input type="radio" id="too_young" value="too_young" name="user_age"> 
+    <label for="too_young">under 25 y/o</label> 
+    <input type="radio" id="eligible_age" value="eligible_age" name="user_age">
+    <label for="eligble_age">25 and older</label>
+    <br><br>
+    <p>Where did you learn about Mars Residencies?</p>
+    <input type="checkbox" value="friends">
+    <label for="friends">Friends or Family</label><br>
+    <input type="checkbox" value="facebook_ad">
+    <label for="facebook_ad">Facebook Ad</label><br>
+    <input type="checkbox" value="product_plac">
+    <label for="product_plac">Movie Product Placement</label>
+    <br> <br>
+    <label for="name">full name:</label>
+      <input type="text" id="name-label" name="name" placeholder="i.e. John Smith"><br><br>
+    <label for="email">email:</label>
+      <input type="email" id="email-label" name="email" placeholder="smithjohn@sbcglobal.net"><br><br>
+    <label for="phone">phone number:</label>
+      <input type="tel" id="number-label" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder=123-456-7890><br><br>
+    <textarea id="add_comments" name="add_comments" rows="4" cols="50" placeholder="additional comments..."></textarea>
+    <input type="submit" value="Submit" id="submit">
+  </form>
+  
+</body>
+</html>
